@@ -1,5 +1,7 @@
 # API specification
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b92ee6c8-3ec6-409f-92a6-787c148949d2/deploy-status)](https://app.netlify.com/sites/coda-api-doc/deploys)
+
 ### Overview
 
 - **Description:** This repository contains the specification for the messages exchanged between the central hub and site nodes. This message format enables the hub to orchestrate distributed tasks, follow their progress, and retrieve computation results from the sites.
