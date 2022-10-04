@@ -56,8 +56,7 @@ paths:
                       type: array
                       items:
                         type: object
-                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] },
-       { "resource": "Observation", filters: [{ "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }], fields: [ {"path": "valueQuantity.value", "label": "hemoglobin" }] } ]
+                      example: [{"resource":"Patient","label":"patient_0","filters":[{"path":"deceased","operator":"is","value":false}],"fields":[{"path":"age","label":"age","type":"integer"},{"path":"gender","label":"gender","type":"string"}]},{"resource":"Observation","label":"observation_0","filters":[{"path":"valueCoded.code.coding","operator":"is","value":"718-7"}],"fields":[{"path":"valueQuantity.value","label":"hemoglobin","type":"integer"}]}]
     
                     options:
                       type: object
@@ -196,7 +195,7 @@ paths:
                       type: array
                       items:
                         type: object
-                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] } ]
+                      example: [{"resource":"Patient","label":"patient_0","filters":[{"path":"deceased","operator":"is","value":false}],"fields":[{"path":"age","label":"age","type":"integer"},{"path":"gender","label":"gender","type":"string"}]}]
     
                     options:
                       type: object
@@ -345,8 +344,7 @@ paths:
                       type: array
                       items:
                         type: object
-                      example: [ { "resource": "Patient",  fields: [ { "path": "age" }] },
-       { "resource": "Observation", filters: [ { "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }, fields: [ { "path": "valueQuantity.value", "label": "hemoglobin" } ]]  } ]
+                      example: [{"resource":"Patient","label":"patient_0","fields":[{"path":"age","label":"age","type":"integer"}]},{"resource":"Observation","label":"observation_0","filters":[{"path":"valueCoded.code.coding","operator":"is","value":"718-7"},{"fields":[{"path":"valueQuantity.value","label":"hemoglobin","type":"integer"}]}]}]
     
                     options:
                       type: object
@@ -513,7 +511,7 @@ paths:
                       type: array
                       items:
                         type: object
-                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [ { "path": "age" }, { "path": "deceased" }, { "path": "(Patient.deceased as deathTime)", "label": "deathTime" } ] } ]
+                      example: [{"resource":"Patient","label":"patient_0","filters":[{"path":"deceased","operator":"is","value":false}],"fields":[{"path":"age","label":"age","type":"integer"},{"path":"deceased","label":"deceased","type":"boolean"},{"path":"(Patient.deceased as deathTime)","label":"deathTime","type":"dateTime"}]}]
     
                     options:
                       type: object
@@ -683,8 +681,7 @@ paths:
                       type: array
                       items:
                         type: object
-                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] },
-       { "resource": "Observation", filters: [{ "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }], fields: [ {"path": "valueQuantity.value", "label": "hemoglobin" }] } ]
+                      example: [{"resource":"Patient","label":"patient_0","filters":[{"path":"isDeceased","operator":"is","value":false}],"fields":[{"path":"age","label":"age","type":"integer"},{"path":"gender","label":"gender","type":"string"}]},{"resource":"Observation","label":"observation_0","filters":[{"path":"valueCoded.code.coding","operator":"is","value":"718-7"}],"fields":[{"path":"valueQuantity.value","label":"hemoglobin","type":"integer"}]}]
     
                     options:
                       type: object
